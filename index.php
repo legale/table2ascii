@@ -25,28 +25,28 @@ $a = array(
 ?>
 <HTML>
 	<BODY>
-<pre>
-<h1>This is table2ascii demo:</h1>
-<?php print_r($a);?>
-<h2>Array converted to ASCII table:</h2> 
-<?php 
-//class import
-require_once(dirname(__FILE__).'/Table2ascii.php');
-?>
+		<pre>
+		<h1>This is table2ascii demo:</h1>
+		<?php print_r($a);?>
+		<h2>Array converted to ASCII table:</h2> 
+		<?php 
+		//class import
+		require_once(dirname(__FILE__).'/Table2ascii.php');
+		?>
 
-<h2>Demo table max. width 170 chars:</h2>
-<?php
-//creating class for drawing tables with max. width 150 chars
-$c = new Table2ascii(170);
-print $c->draw($a);
-?>
+		<h2>Demo table max. width 170 chars:</h2>
+		<?php
+		//creating class for drawing tables with max. width 150 chars
+		$c = new Table2ascii(170);
+		print $c->draw($a);
+		?>
 
-<h2>Demo table max. width 100 chars:</h2>
-<?php
-//creating class for drawing tables with max. width 100 chars
-$c = new Table2ascii(100);
-print $c->draw($a);
-?>
-</PRE>
-</BODY>
+		<h2>Demo table max. width 100 chars:</h2>
+		<?php
+		//creating class for drawing tables with max. width 100 chars
+		$c = new Table2ascii(100);
+		print $c->draw($a);
+		?>
+		</PRE>
+	</BODY>
 </HTML>
